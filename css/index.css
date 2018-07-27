@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body {
+	font-family: 'Playfair Display SC', serif;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1300px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+a,
+button {
+	cursor: url(../images/cursor.png), pointer;
+}
+
+a:hover {
+	color: #a09595;
+	text-decoration: none;
+}
+
+.mobile-menu {
+	display: none;
+	width: 30px;
+	padding: 3px 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-left: 30px;
+
+}
+
+.mobile-menu div {
+	width: 100%;
+	height: 3px;
+	background: #555;
+	margin-bottom: 3px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-phone img {
+	background: #bb8f72;
+	padding: 5px 4px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.header-lang {
+	margin-top: 46px;
+}
+
+.header-phone {
+	background: url(../images/phone.png) no-repeat 0 11px;
+	margin-top: 33px;
+	margin-right: 10px;
+	padding: 13px 0;
+
+}
+
+.header-phone a {
+	margin-left: 35px;
+}
+
+.header-phone a,
+.header-lang a {
+	text-decoration: none;
+	opacity: 0.8;
+	color: #797071;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.4px;
+}
+
+.social {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social a {
+	margin-left: 20px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul li {
+	margin-right: 40px;
+}
+
+nav ul li a {
+	display: block;
+	padding-bottom: 8px;
+	color: #1f1d1d;
+	position: relative;
+	text-decoration: none;
+	margin-top: 45px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0.47px;
+	text-transform: uppercase;
+}
+
+nav ul li a:after {
+	display: none;
+	position: absolute;
+	left: 17%;
+	right: 17%;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	background: #ccc;
+}
+
+nav ul li a:hover:after {
+	display: block;
+}
+
+.home-link a {
+	margin-top: 20px;
+	margin-right: 0;
+}
+
+.header-lang a {
+	padding: 6px 4px;
+	opacity: 0.8;
+	color: #797071;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+}
+
+.header-lang a:hover {
+	background: #bb8f72;
+	border-radius: 50%;
+	color: #ffffff;
+}
+
+/* carousel */
+
+.carousel-inner {
+	background: url(../images/Vector-Smart-Object.png) no-repeat 78px 89px;
+}
+
+
+.carousel-item {
+	padding: 40px 65px 0 50px;
+}
+
+.carousel-img {
+	width: 54%;
+	vertical-align: top;
+	height: 430px;
+	float: right;
+}
+
+.d-block {
+	width: 53%;
+	overflow: hidden;
+
+}
+
+.carousel-caption {
+	display: inline-block;
+	position: static;
+	color: black;
+	text-align: left;
+	width: 48%;
+	vertical-align: top;
+	max-width: 422px;
+	margin-top: 95px;
+	padding-bottom: 0;
+	margin-left: 55px;
+}
+
+.carousel-caption .date {
+	color: #b18a71;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.65px;
+	margin-left: -23px;
+}
+
+.carousel-caption .date span {
+	opacity: 0.8;
+	color: #797071;
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	position: absolute;
+	margin: 6px 0 0 5px;
+}
+
+.carousel-caption h5 {
+	color: #1f1d1d;
+	font-family: "Playfair Display SC";
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 1.8px;
+	margin: 20px 0 22px 0;
+}
+
+.carousel-caption p {
+	max-width: 440px;
+	color: #797071;
+	font-family: "Open Sans";
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.4px;
+}
+
+.button {
+	display: block;
+	font-family: "Helvetica Neue Cyr - Roman";
+	margin: 40px 0 0 -20px;
+	color: #ac8770;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+	background: white;
+	padding: 7px 15px;
+	border: 2px solid #bb8f72;
+	outline: 0;
+	text-transform: none;
+	max-width: 200px;
+	text-align: center;
+}
+
+.button:hover {
+	background: #bb8f72;
+	color: white;
+}
+
+.button:focus {
+	outline: 0;
+}
+
+
+.call-me {
+	position: absolute;
+	right: 0;
+	bottom: 60px;
+}
+
+.call-me:hover {
+	opacity: 0.7;
+}
+
+.call-me img {
+	border: 1px solid #bb8f72;
+	border-radius: 50%;
+	padding: 9px;
+}
+
+footer {
+	background: #1f1d1d;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	align-items: center;
+}
+
+.footer p {
+	padding: 17px 0;
+	opacity: 0.7;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0.3px;
+}
+
+.footer .right {
+	display: flex;
+	align-items: center;
+}
+
+.footer .right p {
+	margin-right: 15px;
+}
+
+.footer .right a {
+	cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 1245px) {
+	.header-phone a,
+	.header-lang a {
+		font-size: 10px;
+	}
+	.header-phone a {
+		margin-left: 35px;
+	}
+	nav ul li a {
+		font-size: 12px;
+	}
+	.home-link a {
+		max-width: 135px;
+	}
+	.home-link a img {
+		width: 100%;
+		min-width: 120px;
+	}
+	.carousel-caption {
+		max-width: 380px;
+		bottom: 0;
+	}
+	.carousel-caption h5 {
+		font-size: 25px;
+	}
+	.carousel-caption p {
+		font-size: 15px;
+	}
+	.carousel-caption .date {
+		font-size: 18px;
+	}
+	.carousel-caption .date span {
+		font-size: 10px;
+	}
+	.button {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 1138px) {
+	.header-phone {
+		width: 112px;
+	}
+	.header-phone img {
+		max-width: 5px;
+	}
+	nav ul li {
+		margin-right: 22px;
+		text-align: center;
+	}
+	.d-block {
+		width: 50%;
+	}
+	.header-lang {
+		padding: 0px 4px;
+		width: 112px;
+	}
+	.carousel-caption h5 {
+		font-size: 23px;
+		line-height: 32px;
+	}
+	.carousel-caption p {
+		font-size: 14px;
+	}
+	.carousel-item {
+		padding: 0;
+	}
+	.carousel-img {
+		width: 52%;
+	}
+
+}
+
+@media screen and (max-width: 991px) {
+	header {
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 15px;
+		padding: 30px 20px;
+		box-sizing: border-box;
+		max-width: 360px;
+		background: rgb(216, 216, 216);
+		flex-direction: column;
+		z-index: 50;
+	}
+	
+	.home-link {
+	display: none;
+}
+	.header-phone {
+	margin: 0;
+}
+	
+	.carousel-item {
+		text-align: center;
+	}
+	.carousel-caption {
+		margin-top: 0;
+		max-width: 600px;
+	}
+	.carousel-caption h5 {
+		font-size: 20px;
+		line-height: 26px;
+		text-align: center;
+	}
+	.carousel-caption p {
+		font-size: 15px;
+		width: 100%;
+		max-width: 600px;
+		text-align: center;
+	}
+	.carousel-img {
+		display: inline-block;
+		width: 100%;
+	}
+	.carousel-item {
+		padding: 0;
+		max-height: auto;
+		text-align: center;
+	}
+	.carousel-inner {
+		background: none;
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	nav ul li {
+		margin-right: 0;
+	}
+	nav ul li a {
+		margin-top: 25px;
+		margin-right: 0;
+		color: #000000;
+	}
+	nav ul li a:hover {
+    color: #000000;
+	}
+	.button {
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+	.call-me {
+		right: 0;
+		bottom: -230px;
+		;
+	}
+	.mobile-menu {
+		display: block;
+	}
+	
+
+}
